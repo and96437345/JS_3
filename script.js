@@ -13,7 +13,7 @@
 //     sum = sum + firstValue
 //     firstValue++
 // }
-// alert('Сумма всех чисел ' + (sum + lastValue))
+// alert(`Сумма всех чисел ${(sum + lastValue)}`)
 
 
 
@@ -29,7 +29,7 @@
 //         secondValue = secondValue - firstValue
 //     }
 // }
-// alert('Наибольший общий делитель ' + firstValue)
+// alert(`Наибольший общий делитель ${firstValue}`)
 
 
 
@@ -37,10 +37,10 @@
 // этого числа.
 
 // let value = +prompt('Введите число', '')
-// for (let i=0; i<value; i++) {
+// for (let i=1; i<value; i++) {
 //     result = value % i
 //     if (result == 0) {
-//         alert('Делитель этого числа ' + i)
+//         alert(`Делитель этого числа ${i}`)
 //     }
 // }
 
@@ -58,7 +58,7 @@
 //         razr++
 // }
 // }
-// alert('Количество цифр в этом числе ' + razr)
+// alert(`Количество цифр в этом числе ${razr}`)
 
 
 
@@ -74,7 +74,7 @@
 // let even = 0
 // let odd = 0
 // for ( let i = 1; i <= 10; i++) {
-//     let value = prompt('Введите ' + i + '-е число')
+//     let value = prompt(`Введите ${i}-е число`, '')
 //     if (value == 0) {
 //         zero++
 //     } else if (value > 0) {
@@ -88,7 +88,7 @@
 //         odd++
 //     }
 // }
-// alert('Положительных чисел ' + positive + ', отрицательных ' + negative + ', нулей ' + zero+ ', четных ' + even + ', нечетных ' + odd)
+// alert(`Положительных чисел ${positive}, отрицательных ${negative}, нулей ${zero}, четных ${even}, нечетных ${odd}`)
 
 
 
@@ -119,9 +119,9 @@
 //         default:
 //             break;
 //     }
-//     alert('Результат ' + result)
-//     condition = confirm('Хотите решить еще пример')
-// } while (condition == true);
+//     alert(`Результат ${result}`)
+//     condition = confirm('Хотите решить еще пример?')
+// } while (condition == true)
 
 
 
@@ -148,7 +148,7 @@
 // let condition = true
 // while (condition == true) {
 //     for (let i = 0; i <= 6; i++) {
-//     condition = confirm(dayWeek[i] + '. Хотите увидеть следующий день?')
+//     condition = confirm(`${dayWeek[i]}. Хотите увидеть следующий день?`)
 //     if (condition == false) {
 //         i = 7
 //     }
@@ -185,7 +185,7 @@
 // let znak
 // let i = 2
 // do {
-//     znak = prompt('Ваше число > ' + num + ', < ' + num + ', или = ' + num + ' ?', 'Введите знак ">" , "<" или "="')
+//     znak = prompt(`Ваше число > ${num}, < ${num}, или = ${num}?`, 'Введите знак ">" , "<" или "="')
 //     if (znak == '>') {
 //         num = Math.round(num + 50/i)
 //     }
@@ -195,4 +195,4 @@
 //     i = i * 2
 // }
 // while(znak != '=')
-// alert('Вы загадали число ' + num)
+// alert(`Вы загадали число ${num}`)
